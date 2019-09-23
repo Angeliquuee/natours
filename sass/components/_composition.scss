@@ -28,8 +28,8 @@
       border: 1.5rem solid $color-primary;
       border-image-source: linear-gradient(-90deg, $color-primary-light, $color-primary-dark);
       border-image-slice: 1;
-      border-image-outset: 2rem;
-      transform: scale(1.05) translateY(-.5rem);
+      border-image-outset: 1rem;
+      transform: scale(1.11) translateY(-.5rem);
       box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
       z-index: 20;
     }
