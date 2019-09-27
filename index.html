@@ -14,6 +14,24 @@
         <title>Natours | Exciting tours for adventurous people</title>
     </head>
     <body>
+      <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button"><span class="navigation__icon">&nbsp;</span></label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Natours</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Your benefits</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Popular tours</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Book now</a></li>
+          </ul>
+        </nav>
+      </div>
+
       <header class="header">
         <div class="header__logo-box">
           <img src="img/logo-white.png" alt="Logo" class="header__logo">
@@ -25,7 +43,7 @@
             <span class="heading-primary--sub">is where life happens</span>
           </h1>
 
-          <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+          <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
         </div>
       </header>
 
@@ -111,7 +129,7 @@
             </div>
           </div>
         </section>
-        <section class="section-tours">
+        <section class="section-tours" id="section-tours">
           <div class="u-center-text u-margin-bottom-big">
             <h2 class="heading-secondary">
                 Most popular tours
@@ -146,7 +164,7 @@
                         <p class="card__price-only">Only</p>
                         <p class="card__price-value">$297</p>
                       </div>
-                      <a href="#" class="btn btn--white">Book now!</a>
+                      <a href="#popup" class="btn btn--white">Book now!</a>
                     </div>
                   </div>
                 </div>
@@ -178,7 +196,7 @@
                           <p class="card__price-only">Only</p>
                           <p class="card__price-value">$497</p>
                         </div>
-                        <a href="#" class="btn btn--white">Book now!</a>
+                        <a href="#popup" class="btn btn--white">Book now!</a>
                       </div>
                     </div>
                 </div>
@@ -210,7 +228,7 @@
                             <p class="card__price-only">Only</p>
                             <p class="card__price-value">$897</p>
                           </div>
-                          <a href="#" class="btn btn--white">Book now!</a>
+                          <a href="#popup" class="btn btn--white">Book now!</a>
                         </div>
                       </div>
                 </div>
@@ -321,6 +339,49 @@
           </div>
         </section>
       </main>
+      <footer class="footer">
+        <div class="footer__logo-box">
+          <img src="img/logo-green-2x.png" alt="Full logo-white" class="footer__logo">
+        </div>
+        <div class="row">
+          <div class="col-1-of-2">
+            <div class="footer__navigation">
+              <ul class="footer__list">
+                <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Careers</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Privacy</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Terms</a>
+              </ul>
+            </div>
+          </div>
+          <div class="col-1-of-2">
+            <p class="footer__copyright">
+              Built by <a href="#" class="footer__link">Angelica Ocular</a> following a Udemy online course <a href="#" class="footer__link">Advanced CSS and Sass</a>. Copyright &copy; by Jonas Schmedtmann. You are 100% allowed to use this webpage for both personal and commercial use, but NOT to claim it as your own design. A credit to the original author, Jonas Schmedtmann, is of course highly appreciated! 
+            </p>
+          </div>
+        </div>
+      </footer>
+
+      <div class="popup" id="popup">
+        <div class="popup__content">
+          <div class="popup__left">
+            <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
+            <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img">
+
+          </div>
+
+          <div class="popup__right">
+            <a href="#section-tours" class="popup__close">&times;</a>
+            <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+            <h3 class="heading-tertiary u-margin-bottom-small">Important &mdash; Please read these terms before booking</h3>
+            <p class="popup__text u-margin-bottom-medium">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis aliquam ut porttitor leo a diam sollicitudin tempor. Molestie nunc non blandit massa enim nec dui nunc mattis. Cursus sit amet dictum sit amet justo donec. Vel pharetra vel turpis nunc eget lorem. At ultrices mi tempus imperdiet. Justo nec ultrices dui sapien. Sit amet volutpat consequat mauris nunc congue nisi vitae. Eget felis eget nunc lobortis mattis aliquam faucibus purus. Ac auctor augue mauris augue neque gravida in. Fermentum leo vel orci porta non pulvinar neque. Et ultrices neque ornare aenean euismod elementum nisi. Quam vulputate dignissim suspendisse in est. 
+            </p>
+            <a href="#" class="btn btn--green">Book now</a>
+          </div>
+        </div>
+      </div>
 
       <!-- GRID TEMPLATE
       <section class="grid-test">
